@@ -1,0 +1,16 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h1, h2 {
+    color: plum;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.evenrow {
+    background-color: seashell;
+}
+h1 {
+    font-size: 4em;
+}
+h2 {
+    font-size:2em;
+}

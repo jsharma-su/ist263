@@ -4,14 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 6 Notes</title>
+    <style>
+        /* selector, property, and value */
+        body {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+        /* you can't use any font you want! */
+        h1 {font-size: 3em;}
+        /*you can use units em or % don't use px or pts */
+        p {
+            font-weight: bolder;
+            color: hotpink;
+            text-decoration: underline;
+        }
+        /*below is a descendant selector - selects tag inside another tag */
+        p a {color: green;}
+        /* id selector picks one unique thing */
+        #secondid {color:purple;}
+        /* this selects anything with a class that has the selector value*/
+        .yellow {color:yellow;}
+    </style>
 </head>
 <body>
-    <h1>CSS</h1>
+    <h1 class="yellow">CSS</h1>
+    <a href="http://www.amazon.com" class="yellow">Amazon</a>
     <h2>Change Font</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, dolores nulla. Fuga, ipsa. Ullam, obcaecati vero sunt explicabo, neque molestiae fuga alias fugit ducimus atque temporibus assumenda est id quia.</p>
+    <p><a href="http://ebay.com">Ebay</a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, dolores nulla. Fuga, ipsa. Ullam, obcaecati vero sunt explicabo, neque molestiae fuga alias fugit ducimus atque temporibus assumenda est id quia.</p>
     <h2>Size</h2>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis cupiditate repellendus, iure, possimus incidunt iste dolorum cum porro quod, laudantium praesentium eligendi nemo aut autem voluptas facilis asperiores. Voluptas, totam?</p>
-    <h2>Weight</h2>
+    <h2 id="secondid">Weight</h2>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae quidem quae a ea hic vitae enim natus consequatur dolores iure nesciunt animi, necessitatibus at. Quo vitae ab expedita laborum quos!</p>
 </body>
 </html>
