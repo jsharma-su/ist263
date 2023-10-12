@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Skills</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            td, th{border: 1px solid rgb(232, 136, 213);}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a>|
+            <a href="contact.html">Contact</a>|
+            <a href="skills.html">Skills</a>|
+        </nav>
+        <h1>Activity</h1>
+        <h2>Skills</h2>
+        <table>
+            <caption>My Skills</caption>
+            <tr>
+                <th>Category</th>
+                <th>Skill</th>
+                <th>Competency Level</th>
+            </tr>
+            <tr class="evenrow">
+                <td>Sports</td>
+                <td>Gymnastics: Floor</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>Sport</td>
+                <td>Gymnastics: Beam</td>
+                <td>Advanced</td>
+            </tr>
+            <tr class="evenrow">
+                <td>Sport</td>
+                <td>Gymnastics: Bars</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>Sport</td>
+                <td>Gymnastics: Vault</td>
+                <td>Advanced</td>
+            </tr>
+            <tr class="evenrow">
+                <td>School</td>
+                <td>Math: Calculus</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>School</td>
+                <td>Science: Physics</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr class="evenrow">
+                <td>School</td>
+                <td>Coding: R</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>School</td>
+                <td>Coding: HTML</td>
+                <td>Basic</td>
+            </tr>
+            <tr class="evenrow">
+                <td>Sport</td>
+                <td>Volleyball</td>
+                <td>Intermediate</td>
+            </tr>
+        </table>
+        <form action="https://formspree.io/f/xeqbrreg" method="POST">
+              <fieldset>
+              <legend>Your Skills:</legend>
+              <label for="category">Category:</label><br>
+              <input type="text" id="category" name="category" value="Type"><br>
+              <label for="skill">Skill:</label><br>
+              <input type="text" id="skill" name="skill" value="Type"><br><br>
+              <label for="level">Competency Level:</label><br>
+              <input type="text" id="level" name="level" value="Type"><br>
+              <input type="submit" value="send form">
+            </fieldset>
+          <p>Do you want to teach someone one of your skills?</p>
+            <input type="radio" id="yes" name="yes" value="yes">
+            <label for="yes">yes</label><br>
+            <input type="radio" id="no" name="no" value="no">
+            <label for="no">no</label><br> 
+        </form> 
+    </body>
+</html>
