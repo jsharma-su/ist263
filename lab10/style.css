@@ -24,16 +24,10 @@ nav {padding: 10px;
 margin-bottom: 30px;
 background-color: #412e42;
 }
-@media only screen and (min-width: 900px) {
-    nav {
-        flex: 1;
-        display:block;
-    }
-    br {display:none;}
-}
 @media only screen and (max-width: 900px) {
-    a {display:block;}
-    span {display: none;
-    flex: 1;
-    margin-bottom: 30px;}
+    nav a {display:block;}
+    nav span {display: none;}
+}
+@media only screen and (min-width: 900px) {
+    .s {display: none;}
 }
