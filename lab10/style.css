@@ -1,0 +1,30 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h1, h2 {
+    color: #e2b3f5;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    background-color: #e9e1f2;
+}
+p {
+    color: #7d3975;
+}
+nav {
+    background-color: #e9e1f2
+}
+nav a {
+    color: #ffffff;
+}
+nav a:hover {
+    background-color: #5f50eb;
+}
+nav {padding: 10px;
+margin-bottom: 30px;
+background-color: #412e42;
+}
+@media only screen and (min-width: 900px) {
+    nav {display:100%;
+    }
+}
