@@ -31,3 +31,17 @@ background-color: #412e42;
 @media only screen and (min-width: 900px) {
     .s {display: none;}
 }
+
+body {font-family: Georgia, 'Times New Roman', Times, serif;}
+nav {color: #a7d2d0;
+    }
+nav a:hover {background-color: #a6f8fd;}
+nav a {color: #778989;}
+p {
+color: #778989;}
+h1 {color: #778989;
+}
+a {border-image-width: 40%;}
+.first {display: flex;}
+.question {flex: 1; order: 1;}
+.pic {flex: 2; order: 2;}
