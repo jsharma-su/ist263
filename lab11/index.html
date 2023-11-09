@@ -9,16 +9,28 @@
     .quote {
         float:right; margin-top: 10px; margin-right: 20px; color: #000000;
     }
+    .skip {
+    background-color: #ffffff;
+    padding: 5px;
+    border: 1pxx solid #000000;
+    text-decoration: none;
+    position: absolute; /* positions an element relative to the top left of the viewport */
+    top: 10px;
+    left: -999px; /* -999 pushes pff the left side of the screen. */
+}
+.skip:focus {
+    left: 10px; /* bring it back when it's been tabbed to */
+}
     </style>
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a><span>|</span> <br class="s">
-        <a href="contact.html">Contact</a><span>|</span> <br class="s">
-        <a href="skills.html">Skills</a><span>|</span> <br class="s">
-        <a href="#main" tableindex="1" class="skip">Skip to Content</a><br>
+        <a href="index.html" tabindex="1">Home</a><span>|</span> <br class="s">
+        <a href="contact.html" tabindex="2">Contact</a><span>|</span> <br class="s">
+        <a href="skills.html" tabindex="3">Skills</a><span>|</span> <br class="s">
+        <a href="#main" tableindex="4" class="skip">Skip to Content</a><br>
     </nav>
-<h1>Jiya Sharma's Biography</h1>
+<h1 id="#main">Jiya Sharma's Biography</h1>
 <main>
 <p>
     At age 4 Jiya started <strong>gymnastics</strong> and she was just doing classes until she was asked to be on the competitive team when she was 6. Since then she has been a year round athlete including when she did <strong>track and field</strong> in high school where she competed in pole vault and long jump.
@@ -34,7 +46,7 @@
 <p>
     When Jiya is not in class or gymnastics she can be found working at her part time job or hanging out with her friends.
 </p>
-<h3 id="#main">Top 3 Favorite Places Jiya's Traveled</h3>
+<h3>Top 3 Favorite Places Jiya's Traveled</h3>
 <ol>
     <li>Barcelona</li>
     <li>Florence</li>
