@@ -24,6 +24,18 @@
                     padding:30px;
                     text-align: right;
                 }
+            .skip {
+                    background-color: #ffffff;
+                    padding: 5px;
+                    border: 1pxx solid #000000;
+                    text-decoration: none;
+                    position: absolute; /* positions an element relative to the top left of the viewport */
+                    top: 10px;
+                    left: -999px; /* -999 pushes pff the left side of the screen. */
+                    }
+            .skip:focus {
+                    left: 10px; /* bring it back when it's been tabbed to */
+                    }
         </style>
     </head>
     <body>
