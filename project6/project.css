@@ -5,9 +5,17 @@ nav a {
     color: #000000;
 }
 nav a:hover {
-    background-color: #5f50eb;
+    background-color: #cde6cb;
 }
 nav {padding: 10px;
 margin-bottom: 30px;
 background-color: #ffffff;
+}
+@media only screen and (max-width: 900px) {
+    nav a {display:block;}
+    nav span {display: none;}
+    .small {display:100%}
+}
+@media only screen and (min-width: 900px) {
+    .s {display: none;}
 }
