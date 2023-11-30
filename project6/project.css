@@ -19,3 +19,15 @@ background-color: #ffffff;
 @media only screen and (min-width: 900px) {
     .s {display: none;}
 }
+.skip {
+    background-color: #ffffff;
+    padding: 5px;
+    border: 1pxx solid #000000;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    left: -999px;
+    }
+.skip:focus {
+    left: 10px;
+    }
