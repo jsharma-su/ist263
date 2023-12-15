@@ -4,6 +4,7 @@ nav {
 nav a {
     color: #000000;
 }
+body {background-color: #F1F1FB;}
 nav a:hover {
     background-color: #cde6cb;
 }
@@ -31,3 +32,19 @@ background-color: #ffffff;
 .skip:focus {
     left: 10px;
     }
+header {
+        background-color: #3498db;
+        color: #F1F1FB;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+footer {
+        background-color: #3498db;
+        color: #F1F1FB;
+        padding: 50px;
+        text-align: center;
+    }
+    body {
+        color: #6e6969}

@@ -6,31 +6,115 @@
     <title>HomePage</title>
     <link rel="stylesheet" href="project.css">
     <style>
-        
+        .space {display: flex;
+                justify-content: space-between;}
+        #slideshow-container {
+            max-width: 600px;
+            position: relative;
+            margin: auto;
+        }
+        .slide {
+            display: none;
+            position: absolute;
+            width: 100%;
+            float: right;
+        }
+        .click {cursor: pointer;}
+        body {background-color: #F1F1FB;}
     </style>
 </head>
-<body>
-    <h1>Travel with Jiya!</h1>
+<header>
+    <h1><img src="../project/media/landmark-dome-solid.svg" alt="landmark dome" height="30px" width="30px"> Travel with Jiya!</h1>
     <nav>
-        <a href="page1.html">HomePage  </a><span>|</span><br class="s">
-       <a href="page2.html">Things to do and Review!</a><br class="s">
-   </nav><br>
+        <a href="page2.html"><img src="../project/media/plane-solid.svg" height="30" width="30" alt="plane icon"></a><span>|</span><br class="s">
+       <a href="page3.html"><img src="../project/media/dollar-sign-solid.svg" height="30" width="30" alt="dollar sign"></a><br class="s">
+       <a href="#main" tableindex="1" class="skip">Skip to Content</a><br>
+   </nav>
+</header><br>
+<body>
    <div>
-        <div><a><img src="../project/media/Site-Name.png" width= "1080" height="540" alt="Photo of Jiya in Florence"></a></div>
+        <div><a><img src="../project/media/Piazza-Michelangelo.png" width= "100%" height="auto" alt="Photo of Jiya in Florence"></a></div>
        <div><p>Are you a fan of traveling? Are you in your young adult years? Are you worried about your spending? This website is designed to help you travel abroad on a budget! Experiences like traveling last forever and there is an endless amount of things to do when you travel. Studying abroad while in college was something that I have always wanted to do and this past Summer I was able to do so while also on a budget from money saved up throughout my life. Here are photos of places I was able to visit while studying abroad in Florence!</p></div>
-       <div><h2>Travel Abroad</h2></div>
-       <div><a><img src="../project/media/Amalfi-Coast.jpeg" width= "170" height="220" alt="Amalfi Coast"></a></div>
-       <div><a><img src="../project/media/Livorno-Beach.jpeg" width= "170" height="220" alt="Livorno Beach"></a></div>
-       <div><a><img src="../project/media/Downtown-Barcelona.jpeg" width= "170" height="220" alt="Downtown Barcelona"></a></div>
+    </div>
+    <h2 id="main">Travel Abroad</h2>
+    <div class="space">
+       <img src="../project/media/Duomo-Milan.png" width= "250" height="350" alt="The duomo in Milan in Italy from high view">
+       <img src="../project/media/Hall-of-Mirrors-Palace-of-Versailles.png" width= "250" height="350" alt="Hall of mirrors in the palace of versailles in France">
+       <img src="../project/media/Pitti-Palace-Florence.png" width= "250" height="350" alt="the pitti palace in florence">
    </div>
+   <div class="space">
+   <p>Duomo in Milan</p>
+   <p>  Hall of Mirrors in the Palace of Versailles</p>
+   <p>Pitti Palace in Florence</p>
+   </div>
+   <h2>Explore</h2>
+   <div id="slideshow-container">
+    <div class="slide">
+        <img src="../project/media/Streets-Amsterdam.png" alt="Photo 1" width="500" height="600">
+    </div>
+    <div class="slide">
+        <img src="../project/media/Colusseum.png" alt="Photo 2" width="1000" height="600">
+    </div>
+    <div class="slide">
+        <img src="../project/media/Florence-sideways.png" alt="Photo 3" width="1000" height="600">
+    </div>
+    <div class="slide">
+        <img src="../project/media/Park-Amsterdam.png" alt="Photo 4" width="500" height="600">
+    </div>
+    <div class="slide">
+        <img src="../project/media/Rome-Streets.png" alt="Photo 5" width="500" height="600">
+    </div>
+    <div class="slide">
+        <img src="../project/media/Trevi-Fountain.png" alt="Photo 6" width="500" height="600">
+    </div>
+    <div class="slide">
+        <img src="../project/media/Venice.jpeg" alt="Photo 5" width="500" height="600">
+    </div>
+    <div class="slide">
+        <img src="../project/media/London-Bridge.png" alt="Photo 5" width="500" height="600">
+    </div>
+    <div class="slide">
+        <img src="../project/media/Madrid-Pretty.png" alt="Photo 5" width="500" height="600">
+    </div>
+</div>
+   </div><br> 
    <div>
-    <div><h2>Explore</h2></div>
-    <div><a><img src="../project/media/Venice.jpeg" width= "170" height="220" alt="Venice"></a></div>
-    <div><a><img src="../project/media/Winery.jpeg" width= "170" height="220" alt="Winery"></a></div>
-    <div><a><img src="../project/media/Tuscan-Scene.jpeg" width= "170" height="220" alt="Tuscan Scene"></a></div>
+    <h3>Click on the photos below!</h3>
+    <div><a><img src="../project/media/Downtown-Florence.png" width= "200" height="250" alt="Venice" onclick="navigateToSection('page2.html', 'florence')" class="click"></a></div>
+    <div><a><img src="../project/media/me-pisa.png" width= "200" height="250" alt="Winery" onclick="navigateToSection('page2.html', 'pisa')" class="click"></a></div>
+    <div><a><img src="../project/media/me-venice.png" width= "200" height="250" alt="Tuscan Scene" onclick="navigateToSection('page2.html', 'venice')" class="click" class="click"></a></div>
    </div>
-   <footer>It's not about the destination, it's about the journey <br>
+   <script>
+    var currentSlide = 0;
+    var slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+        slides.forEach(function(slide) {
+            slide.style.display = 'none';
+        });
+
+        slides[index].style.display = 'block';
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    showSlide(currentSlide);
+
+    setInterval(nextSlide, 3000);
+    function navigateToSection(destination, sectionId) {
+        window.location.href = destination + '#' + sectionId;
+    }
+</script>
+<footer>It's not about the destination, it's about the journey. <br>
     &copy; 2023
-   </footer>
+</footer>
 </body>
 </html>
