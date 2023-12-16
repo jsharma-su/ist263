@@ -5,4 +5,7 @@ flex: wrap;
 justify-content: space-evenly;
 }
 #slideshow-container {display:none;}
+img {width: 100%; height: auto;}
+p {display: flex;
+    flex: wrap;}
 }
