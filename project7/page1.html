@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Ephesis&family=Nanum+Gothic&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Ephesis&family=Nanum+Gothic&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="project.css">
     <style>
         .space {display: flex;
@@ -21,14 +27,30 @@
         }
         .click {cursor: pointer;}
         p {font-size: 20px;}
-    </style>
+        strong {font-family: 'Bad Script', cursive; font-family: 'Ephesis', cursive; font-family: 'Nanum Gothic', sans-serif; font-family: 'Quicksand', sans-serif;}
+        body {font-family: 'Bad Script', cursive; font-family: 'Ephesis', cursive; font-family: 'Nanum Gothic', sans-serif; font-family: 'Quicksand', sans-serif;}    
+        @media only screen and (max-width: 900px) {
+      .content img {
+        width: 100%; }
+        #slideshow-container {display:none;}
+    }
+    @media only screen and (min-width: 900px) {
+    }
+#slideshow-container {display: block;}
+.container {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+        </style>
 </head>
 <body>
+<div class="container">
+    <div class="content">
 <header>
-    <h1><img src="../project/media/landmark-dome-solid.svg" alt="landmark dome" height="30" width="30"> Travel with Jiya!</h1>
+    <h1><img src="../project/media/landmark-dome-solid.svg" alt="landmark dome icon" height="30" width="30"> Travel with Jiya!</h1>
     <nav>
         <div class="dropdown">
-            <button><img src="../project/media/chevron-down-solid.svg" alt="dropdown menu" height="30" width="30"></button>
+            <button><img src="../project/media/chevron-down-solid.svg" alt="dropdown menu icon" height="30" width="30"></button>
             <div class="dropdown-content">
                 <a href="page2.html"><img src="../project/media/plane-solid.svg" height="30" width="30" alt="plane icon"></a>
                 <a href="page3.html"><img src="../project/media/dollar-sign-solid.svg" height="30" width="30" alt="dollar sign"></a>
@@ -38,7 +60,7 @@
     </nav>
 </header><br>
    <div>
-        <div><a><img src="../project/media/Piazza-Michelangelo.png" style="width: 100%; height: auto;" alt="Photo of Jiya in Florence"></a></div>
+        <div><a><img src="../project/media/Piazza-Michelangelo.png" style="width: 100%; height: auto;" alt="the go to sunset place in florence called the piazza michelangelo"></a></div>
        <div><p>Are you a fan of traveling? Are you in your young adult years? Are you worried about your spending? This website is designed to help you travel abroad on a budget! Experiences like traveling last forever and there is an endless amount of things to do when you travel. Studying abroad while in college was something that I have always wanted to do and this past Summer I was able to do so while also on a budget from money saved up throughout my life. Here are photos of places I was able to visit while studying abroad in Florence!</p></div>
     </div>
     <h2 id="main">Travel Abroad</h2>
@@ -55,38 +77,38 @@
    <h2>Explore</h2>
    <div id="slideshow-container">
     <div class="slide">
-        <img src="../project/media/Streets-Amsterdam.png" alt="Photo 1" width="500" height="600">
+        <img src="../project/media/Streets-Amsterdam.png" alt="the city of amsterdam in the netherlands street view" width="500" height="600">
     </div>
     <div class="slide">
-        <img src="../project/media/Colusseum.png" alt="Photo 2" width="1000" height="600">
+        <img src="../project/media/Colusseum.png" alt="the roman colusseum from the inside" width="1000" height="600">
     </div>
     <div class="slide">
-        <img src="../project/media/Florence-sideways.png" alt="Photo 3" width="1000" height="600">
+        <img src="../project/media/Florence-sideways.png" alt="view from high up on mountain of the city of florence" width="1000" height="600">
     </div>
     <div class="slide">
-        <img src="../project/media/Park-Amsterdam.png" alt="Photo 4" width="500" height="600">
+        <img src="../project/media/Park-Amsterdam.png" alt="view of a park in amsterdam in the netherlands" width="500" height="600">
     </div>
     <div class="slide">
-        <img src="../project/media/Rome-Streets.png" alt="Photo 5" width="500" height="600">
+        <img src="../project/media/Rome-Streets.png" alt="the streets of the city of rome" width="500" height="600">
     </div>
     <div class="slide">
-        <img src="../project/media/Trevi-Fountain.png" alt="Photo 6" width="500" height="600">
+        <img src="../project/media/Trevi-Fountain.png" alt="the famous trevi fountain in rome" width="500" height="600">
     </div>
     <div class="slide">
-        <img src="../project/media/Venice.jpeg" alt="Photo 5" width="500" height="600">
+        <img src="../project/media/Venice.jpeg" alt="from a gondola ride in venice view of the water" width="500" height="600">
     </div>
     <div class="slide">
-        <img src="../project/media/London-Bridge.png" alt="Photo 5" width="500" height="600">
+        <img src="../project/media/London-Bridge.png" alt="view from the london bridge" width="500" height="600">
     </div>
     <div class="slide">
-        <img src="../project/media/Madrid-Pretty.png" alt="Photo 5" width="500" height="600">
+        <img src="../project/media/Madrid-Pretty.png" alt="a fountain in madrid" width="500" height="600">
     </div>
 </div> 
    <div>
     <h3>Click on the photos below!</h3>
-    <div><a><img src="../project/media/Downtown-Florence.png" width= "200" height="250" alt="Venice" onclick="navigateToSection('page2.html', 'florence')" class="click"></a></div>
-    <div><a><img src="../project/media/me-pisa.png" width= "200" height="250" alt="Winery" onclick="navigateToSection('page2.html', 'pisa')" class="click"></a></div>
-    <div><a><img src="../project/media/me-venice.png" width= "200" height="250" alt="Tuscan Scene" onclick="navigateToSection('page2.html', 'venice')" class="click"></a></div>
+    <div><a><img src="../project/media/Downtown-Florence.png" width= "200" height="250" alt="me in florence next to a wine window" onclick="navigateToSection('page2.html', 'florence')" class="click"></a></div>
+    <div><a><img src="../project/media/me-pisa.png" width= "200" height="250" alt="me in pisa pretending to hold up the leaning tower" onclick="navigateToSection('page2.html', 'pisa')" class="click"></a></div>
+    <div><a><img src="../project/media/me-venice.png" width= "200" height="250" alt="me in venice on a gondola boat ride" onclick="navigateToSection('page2.html', 'venice')" class="click"></a></div>
    </div>
    <script>
     var currentSlide = 0;
@@ -120,5 +142,7 @@
 <footer><strong>It's not about the destination, it's about the journey.</strong><br>
     <strong>&copy; 2023</strong>
 </footer>
+</div>
+</div>
 </body>
 </html>

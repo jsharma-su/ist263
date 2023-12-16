@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Things To Do and Review!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Ephesis&family=Nanum+Gothic&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Ephesis&family=Nanum+Gothic&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="project.css">
     <style>
         .pagename {display:flex;
@@ -25,19 +31,30 @@
         .words {margin-left: 20px;
                 margin-right: 20px;}
         h2 {margin-left: 30px;}
-        .space {display: flex;
+        .space {display:block;
+                display: flex;
                 justify-content: space-between;}
         .float {display: flex;
                 float: right;}
         body {background-color: #F1F1FB;}
+        strong {font-family: 'Bad Script', cursive; font-family: 'Ephesis', cursive; font-family: 'Nanum Gothic', sans-serif; font-family: 'Quicksand', sans-serif;}
+        body {font-family: 'Bad Script', cursive; font-family: 'Ephesis', cursive; font-family: 'Nanum Gothic', sans-serif; font-family: 'Quicksand', sans-serif;}
+        @media only screen and (max-width: 900px) {
+      .content img {
+        width: 100%; }
+    }
+    @media only screen and (miin-width: 900px) {
+        img {width:100%;}
+    }
     </style>
 </head>
 <body>
+<div class="content">
 <header>
-    <h1><img src="../project/media/landmark-dome-solid.svg" alt="landmark dome" height="30" width="30"> Travel with Jiya!</h1>
+    <h1><img src="../project/media/landmark-dome-solid.svg" alt="landmark dome icon" height="30" width="30"> Travel with Jiya!</h1>
     <nav>
         <div class="dropdown">
-            <button><img src="../project/media/chevron-down-solid.svg" alt="dropdown menu" height="30" width="30"></button>
+            <button><img src="../project/media/chevron-down-solid.svg" alt="dropdown menu icon" height="30" width="30"></button>
             <div class="dropdown-content">
                 <a href="page1.html"><img src="../project/media/house-solid.svg" height="30" width="30" alt="house icon"></a>
                 <a href="page3.html"><img src="../project/media/dollar-sign-solid.svg" height="30" width="30" alt="dollar sign"></a>
@@ -60,7 +77,7 @@
     <img src="../project/media/Florence-River.png" width= "300" height="400" alt="River in Florence with a view from a bridge">
 </div>
 <div class="container">
-    <img src="../project/media/Pisa.jpeg" width = "300" height="400" alt="Leaning Tower of Pisa">
+    <img src="../project/media/Pisa.jpeg" width = "300" height="400" alt="view from a tall landmark in pisa">
     <p id="pisa" class="words"><strong>Pisa, Italy: </strong> Pisa may be known for the leaning tower, but there is so much more to it. The city was beautiful and had an amazing area to shop and buy souveniers. There was a pass I had bought that was not too pricy and I was able to then go into all of the buildings around the leaning tower, like the Museum or the Cathedral or the Balisca that had such beautiful art everywhere. If you are smart enough to buy tickets in advance you can book tickets to walk up the leaning tower as well. The city had great restaurants and places all around the city to shop.</p>
     <p class="words"><strong>Tuscany, Italy: </strong> Tuscany is the region in Italy that I was primarily in throughout my time studying abroad. The region's capitol is Florence and there are many beautiful cities within it. In Tuscany you can choose from vineyards, to wineries and beautiful sights like the house that Mona Lisa actually lived in.</p>
     <img src="../project/media/Caparsa-Winery-Inside.png" width = "300" height="400" alt="Inside of Caparsa Winery for wine tasting">
@@ -89,5 +106,6 @@
     <footer><strong>It's not about the destination, it's about the journey.</strong><br>
         <strong>&copy; 2023</strong>
    </footer>
+</div>
 </body>
 </html>
