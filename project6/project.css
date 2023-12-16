@@ -10,7 +10,7 @@ nav a:hover {
 }
 nav {padding: 10px;
 margin-bottom: 30px;
-background-color: #ffffff;
+background-color: #3498db;
 }
 @media only screen and (max-width: 900px) {
     nav a {display:block;}
@@ -34,7 +34,7 @@ background-color: #ffffff;
     }
 header {
         background-color: #3498db;
-        color: #F1F1FB;
+        color: #ffffff;
         padding: 10px 10px;
         display: flex;
         justify-content: space-between;
@@ -42,7 +42,7 @@ header {
     }
 footer {
         background-color: #3498db;
-        color: #F1F1FB;
+        color: #ffffff;
         padding: 50px;
         text-align: center;
     }
